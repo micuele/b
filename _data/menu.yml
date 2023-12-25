@@ -2,7 +2,10 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: all posts
+  - title: projects
+    show_more_text: coming soon
+  
+- title: posts
     post_list:
       limit: 5
       show_more: true
