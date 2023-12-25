@@ -1,7 +1,7 @@
 # For documentation on this file, see:
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
-#entries:
+entries:
 #  - title: info
 #    entries:
 #      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
@@ -10,7 +10,7 @@
 #      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
 
   - title: posts
-    post_list:
+     post_list:
       limit: 5
       show_more: true
       show_more_text: See archive...
@@ -28,6 +28,7 @@
 
   - title: rss
     url: feed.xml
+
 #  - title: another list
 #    entries:
 #      - title: with subitems
