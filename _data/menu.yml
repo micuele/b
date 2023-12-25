@@ -3,9 +3,7 @@
 
 entries:
   - title: projects
-    show_more_text: coming soon
-  
-- title: posts
+  - title: posts
     post_list:
       limit: 5
       show_more: true
