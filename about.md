@@ -5,3 +5,4 @@ permalink: /about/
 ---
 
 hiao
+email: qiricimichele@gmail.com
