@@ -2,11 +2,12 @@
 layout: post
 title: "Lernen"
 ---
-## Zeilsetzen  
-    Spezifisch
-    Bedeutungsvoll
-    Deutlich (so dass man das Ziel anderen sagen kann)
-    Messbar
+### Zeilsetzen  
+   
+    - Spezifisch
+    - Bedeutungsvoll
+    - Deutlich (so dass man das Ziel anderen sagen kann)
+    - Messbar
   
     Nutze das `Spacing` (spaced repetition, z.B. mit Anki)
         Verteile die Lernblöcke
@@ -18,7 +19,7 @@ title: "Lernen"
     
     Mache Pausen (Pomodoro-Technik)
 
-## Effizientes Lesen
+### Effizientes Lesen
 
 1. Überfliege den Text
 2. Setze ein Ziel (Was willst/suchst du?)
@@ -29,8 +30,8 @@ title: "Lernen"
 7. Bleibe ruhig
 8. Nutze das KWL (Know-Want-Learn)
 
-## Mnemotechnik
-   ### Verknüpfungsmethode
+### Mnemotechnik
+    Verknüpfungsmethode
         Informationen in Bilder umwandeln und diese miteinander verknüpfen
     Verwende das `PAV` (Paradox Action Vivid)
     Das Bild/Die Verknüpfung sollte:
@@ -41,7 +42,7 @@ title: "Lernen"
         Wasserstoff → Hydrant
         Lithium → Lithiumbatterie
 
-   ### Palast der Erinnerung
+#### Palast der Erinnerung
     Baue einen mentalen Pfad an einem Ort, den wir gut kennen, indem du feste Punkte darin identifizierst und Informationen mit ihnen verknüpfst. Zum Beispiel: Das Haus als Ort und die Möbel als feste Punkte.
     1. Auswahl des Pfads
     2. Ordne die Räume
