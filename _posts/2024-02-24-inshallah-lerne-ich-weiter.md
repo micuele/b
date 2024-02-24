@@ -47,8 +47,8 @@ Das Bild/Die Verknüpfung sollte:
 Baue einen mentalen Pfad an einem Ort, den wir gut kennen, indem du feste Punkte darin identifizierst und Informationen mit ihnen verknüpfst. Zum Beispiel: Das Haus als Ort und die Möbel als feste Punkte.
 1. Auswahl des Pfads
 2. Ordne die Räume
-3. Auswahl der Orte
-    Die wichtigsten Bezugspunkte eines Raumes (Zimmer: Bett, Schreibtisch, Kleiderschrank).
-    Wähle die Orte im Uhrzeigersinn aus
-    Gleichmäßig und gut über den Raum verteilt
-    Vermeide Wiederholungen im selben Raum
+3. Auswahl der Orte:
+    - Die wichtigsten Bezugspunkte eines Raumes (Zimmer: Bett, Schreibtisch, Kleiderschrank).
+    - Wähle die Orte im Uhrzeigersinn aus
+    - Gleichmäßig und gut über den Raum verteilt
+    - Vermeide Wiederholungen im selben Raum
