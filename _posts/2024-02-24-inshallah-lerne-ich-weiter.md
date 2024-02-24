@@ -9,9 +9,9 @@ title: "Lernen"
     - Deutlich (so dass man das Ziel anderen sagen kann)
     - Messbar
   
-    Nutze das `Spacing` (spaced repetition, z.B. mit Anki)
+    Nutze das **Spacing** (spaced repetition, z.B. mit Anki)
         Verteile die Lernblöcke
-   `Aktives Abrufen`
+    **Aktives Abrufen**
         Stelle dir Fragen, mache Quizze
 
     Mische die Fächer, die du lernst
@@ -33,7 +33,7 @@ title: "Lernen"
 ### Mnemotechnik
     Verknüpfungsmethode
         Informationen in Bilder umwandeln und diese miteinander verknüpfen
-    Verwende das `PAV` (Paradox Action Vivid)
+    Verwende das **PAV** (Paradox Action Vivid)
     Das Bild/Die Verknüpfung sollte:
         paradox sein, nicht trivial, je seltsamer, desto leichter zu erinnern
         Bewegung enthalten, da die Statik das Gedächtnis langweilt
