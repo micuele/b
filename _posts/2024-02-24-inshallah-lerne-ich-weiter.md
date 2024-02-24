@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lernen"
+category: text
 ---
 ### Zeilsetzen  
    

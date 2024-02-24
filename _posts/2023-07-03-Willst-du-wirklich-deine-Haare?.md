@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Willst du wirklich deine Haare?"
+category: geschichte
 ---
 Auf dem Waschbecken liegt mein Haarschneider. Ich betrachte ihn.
 Ich hebe meinen Blick und im Spiegel sehe ich mein dunkles Haar, dann mein Gesicht.

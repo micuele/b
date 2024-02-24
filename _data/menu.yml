@@ -3,12 +3,20 @@
 
 entries:
   - title: projects
-  - title: posts
+  - title: a
     post_list:
+      category: text
       limit: 5
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html
- 
+
+  - title: b
+    post_list:
+      category: geschichte
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
   - title: about
     url: about
