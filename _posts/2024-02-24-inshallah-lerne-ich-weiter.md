@@ -10,9 +10,9 @@ title: "Lernen"
 - Messbar
   
 Nutze das **Spacing** (spaced repetition, z.B. mit Anki)
-    Verteile die Lernblöcke
+    - Verteile die Lernblöcke
 **Aktives Abrufen**
-    Stelle dir Fragen, mache Quizze
+    - Stelle dir Fragen, mache Quizze
 
 Mische die Fächer, die du lernst
 Bleibe organisiert und behalte den Überblick über das Gelernte
@@ -32,15 +32,16 @@ Mache Pausen (Pomodoro-Technik)
 
 ### Mnemotechnik
 Verknüpfungsmethode
-    Informationen in Bilder umwandeln und diese miteinander verknüpfen
+    - Informationen in Bilder umwandeln und diese miteinander verknüpfen
 Verwende das **PAV** (Paradox Action Vivid)
 Das Bild/Die Verknüpfung sollte:
-    paradox sein, nicht trivial, je seltsamer, desto leichter zu erinnern
-    Bewegung enthalten, da die Statik das Gedächtnis langweilt
-    die Geschichte leben, als ob sie wirklich passiert
+    - paradox sein, nicht trivial, je seltsamer, desto leichter zu erinnern
+    - Bewegung enthalten, da die Statik das Gedächtnis langweilt
+    
+    - lebe die Geschichte, als ob sie wirklich passiert sei.
 Beispiel:
-    Wasserstoff → Hydrant
-    Lithium → Lithiumbatterie
+    - Wasserstoff → Hydrant
+    - Lithium → Lithiumbatterie
 
 #### Palast der Erinnerung
 Baue einen mentalen Pfad an einem Ort, den wir gut kennen, indem du feste Punkte darin identifizierst und Informationen mit ihnen verknüpfst. Zum Beispiel: Das Haus als Ort und die Möbel als feste Punkte.
