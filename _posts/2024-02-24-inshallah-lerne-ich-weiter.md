@@ -10,11 +10,11 @@ title: "Lernen"
 - Messbar
   
 Nutze das **Spacing** (spaced repetition, z.B. mit Anki)
-    - Verteile die Lernblöcke
+- Verteile die Lernblöcke
 **Aktives Abrufen**
-    - Stelle dir Fragen, mache Quizze
+- Stelle dir Fragen, mache Quizze
 
-Mische die Fächer, die du lernst
+Mische die Fächer, die du lernst.
 Bleibe organisiert und behalte den Überblick über das Gelernte
     
 Mache Pausen (Pomodoro-Technik)
