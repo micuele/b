@@ -11,6 +11,7 @@ title: "Lernen"
   
 Nutze das **Spacing** (spaced repetition, z.B. mit Anki)
 - Verteile die Lernblöcke
+
 **Aktives Abrufen**
 - Stelle dir Fragen, mache Quizze
 
