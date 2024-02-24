@@ -40,8 +40,8 @@ Das Bild/Die Verknüpfung sollte:
 - Paradox sein, nicht trivial, je seltsamer, desto leichter zu erinnern
 - Bewegung enthalten, da die Statik das Gedächtnis langweilt
     Beispiel:
-        - Wasserstoff → Hydrant
-        - Lithium → Lithiumbatterie
+    - Wasserstoff → Hydrant
+    - Lithium → Lithiumbatterie
 
 #### Palast der Erinnerung
 Baue einen mentalen Pfad an einem Ort, den wir gut kennen, indem du feste Punkte darin identifizierst und Informationen mit ihnen verknüpfst. Zum Beispiel: Das Haus als Ort und die Möbel als feste Punkte.
