@@ -31,7 +31,7 @@ Mache Pausen (Pomodoro-Technik)
 8. Nutze das KWL (Know-Want-Learn)
 
 ### Mnemotechnik
-Verknüpfungsmethode
+#### Verknüpfungsmethode
     - Informationen in Bilder umwandeln und diese miteinander verknüpfen
 Verwende das **PAV** (Paradox Action Vivid)
 Das Bild/Die Verknüpfung sollte:
