@@ -2,14 +2,13 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: projects
-  - title: a
+  - title: pics
     post_list:
-      category: text
-      limit: 5
+      category: photo
+      limit: 3
       show_more: true
       show_more_text: See archive...
-      show_more_url: archive.html
+      show_more_url: photo-archive.html
 
   - title: b
     post_list:
