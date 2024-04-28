@@ -2,4 +2,4 @@
 layout: post
 category: photo
 ---
-![einkauf](/img/vlora/PXL_20240412_175601235.MP.jpg){:.ioda width="75%"}
+![einkauf](/img/cacio-e-pepe/PXL_20240412_175601235.MP.jpg){:.ioda width="75%"}
