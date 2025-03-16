@@ -7,4 +7,4 @@ Der meta-dimensionale Mensch findet Spiritualität in der Semantik von Worten im
 
 Nach dem Tod Gottes bleibt der moderne Mensch ohne einen aussprechbaren Leitfaden bzw. Glauben.
 Die Evolution des Glaubens ist notwendig – die Suche, die Folge der menschlichen Schwäche.
-Die Konzepte werden zu Perversionen, und damit wird lustvoll gespielt.
+Die Konzepte werden zu Perversionen, mit denen lustvoll gespielt wird.
