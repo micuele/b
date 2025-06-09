@@ -1,5 +1,5 @@
 // Config
-const CLIENT_ID = 'your-client-id-here';
+const CLIENT_ID = '33d362ca24344174ba29627c44204d19';
 const REDIRECT_URI = 'https://yourusername.github.io/spotify-emoji/';
 const SCOPES = ['user-read-recently-played'];
 
