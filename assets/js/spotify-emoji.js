@@ -18,7 +18,7 @@ function getTokenFromUrl() {
 
 // --- API Calls ---
 async function fetchRecentlyPlayed(token) {
-    const res = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50', { // Added a limit for practical use
+    const res = await fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50', { // Correct API endpoint with limit
         headers: { Authorization: `Bearer ${token}` }
     });
     if (!res.ok) {
@@ -34,7 +34,7 @@ async function fetchAudioFeatures(token, trackIds) {
     // Spotify's Audio Features endpoint takes up to 100 track IDs at once
     for (let i = 0; i < trackIds.length; i += 100) {
         const batch = trackIds.slice(i, i + 100).join(',');
-        const res = await fetch(`https://api.spotify.com/v1/audio-features?ids=${batch}`, {
+        const res = await fetch(`https://api.spotify.com/v1/audio-features?ids=${batch}`, { // Correct API endpoint
             headers: { Authorization: `Bearer ${token}` }
         });
         if (!res.ok) {
@@ -47,7 +47,7 @@ async function fetchAudioFeatures(token, trackIds) {
     return batches;
 }
 
-// --- Emoji Logic ---
+// --- Emoji Logic (No changes needed here) ---
 function getEmojiFromFeatures(features) {
     const avg = { danceability: 0, valence: 0, energy: 0 };
 
