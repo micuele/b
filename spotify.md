@@ -1,5 +1,5 @@
 ---
-layout: emoji
+layout: spotify
 title: Your Emoji
 permalink: /spotify
 ---
