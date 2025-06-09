@@ -15,6 +15,6 @@ layout: none
     <p>Loading your emoji...</p>
   </div>
 
-  <script src="/_data/spotify.js"></script>
+  <script src="/assets/js/spotify-emoji.js"></script>
 </body>
 </html>
