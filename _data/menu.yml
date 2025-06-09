@@ -2,10 +2,10 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
- title: projects
+  - title: projects
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
-      - title: github repo
+      - title: ever wonderd what emoji you are based on your music?
+      - title: tell me
         url: https://github.com/riggraz/no-style-please
   - title: all posts
     post_list:
