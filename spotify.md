@@ -1,7 +1,7 @@
 ---
 layout: emoji
 title: Your Emoji
-permalink: /spotify-emoji/
+permalink: /spotify
 ---
 
 <div id="app">
