@@ -1,4 +1,4 @@
-// assets/js/emoji.js (This is the content for your emoji.js file)
+// assets/js/emoji.js (Content for your emoji.js file)
 
 // List of emojis representing various objects, along with their names.
 const objectEmojis = [
@@ -11,7 +11,7 @@ const objectEmojis = [
     ['🔔', "Bell"], ['📊', "Bar Chart"], ['📮', "Postbox"], ['🪜', "Ladder"],
     ['🧰', "Toolbox"], ['🧼', "Soap"], ['🛍️", "Shopping Bags"], ['💎', "Gem Stone"],
     ['🧪', "Test Tube"], ['💵', "Dollar Banknote"], ['🧳", "Luggage"], ['🔎', "Magnifying Glass"],
-    ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏', "Straight Ruler"], ['📐', "Set Square"],
+    ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏', "Straight Ruler"], ['📐", "Set Square"],
     ['🧩', "Puzzle Piece"], ['⏰', "Alarm Clock"], ['🗓️", "Spiral Calendar"], ['📅', "Calendar"],
     ['📰', "Newspaper"], ['🗞️', "Rolled-up Newspaper"], ['📜', "Scroll"], ['📖', "Open Book"],
     ['📕', "Red Book"], ['📗', "Green Book"], ['📘', "Blue Book"], ['📙', "Orange Book"],
@@ -34,7 +34,7 @@ const objectEmojis = [
 // Get references to the HTML elements.
 const emojiDisplay = document.getElementById('emoji-display');
 const emojiNameDisplay = document.getElementById('emoji-name-display');
-const messageArea = document.getElementById('message-area');
+const messageArea = document.getElementById('message-area'); // Still here, but won't display 'come back tomorrow'
 
 // Keys for storing data in localStorage.
 const LAST_GENERATED_DATE_KEY = 'dailyEmojiDate';
@@ -55,21 +55,22 @@ function getTodayDateString() {
  * @param {boolean} isNewGeneration - True if this emoji was just randomly generated for today.
  */
 function displayEmojiAndMessage(emojiChar, emojiName, isNewGeneration) {
-    // Crucial check: Ensure elements are found before trying to set their textContent
     if (!emojiDisplay || !emojiNameDisplay || !messageArea) {
-        console.error("JavaScript Error: One or more required HTML elements (emoji-display, emoji-name-display, or message-area) were not found in the DOM when displayEmojiAndMessage was called.");
-        // This log will help if the elements are not ready, or IDs don't match
+        console.error("JavaScript Error: One or more required HTML elements were not found.");
         console.log("Debug: emojiDisplay =", emojiDisplay, "emojiNameDisplay =", emojiNameDisplay, "messageArea =", messageArea);
-        return; // Stop execution if elements are missing
+        return;
     }
 
     emojiDisplay.textContent = emojiChar;
     emojiNameDisplay.textContent = `You are ${emojiName}`;
 
+    // Removed the "Come back tomorrow for a new one!" message.
+    // The message area will now only display "Enjoy your daily object emoji!" on a new generation.
+    // Otherwise, it will remain empty if the emoji was already generated for the day.
     if (isNewGeneration) {
         messageArea.textContent = "Enjoy your daily object emoji!";
     } else {
-        messageArea.textContent = "Come back tomorrow for a new one!";
+        messageArea.textContent = ""; // Clear message if it's not a new generation
     }
 }
 
