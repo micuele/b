@@ -1,4 +1,4 @@
-// assets/js/emoji.js (Content for your emoji.js file)
+// assets/js/emoji.js (Fixed version)
 
 // List of emojis representing various objects, along with their names.
 const objectEmojis = [
@@ -9,13 +9,13 @@ const objectEmojis = [
     ['🛡️', "Shield"], ['🔭', "Telescope"], ['🧸', "Teddy Bear"], ['🎁', "Gift"],
     ['🖼️', "Framed Picture"], ['🛒', "Shopping Cart"], ['🔋', "Battery"], ['📍', "Round Pushpin"],
     ['🔔', "Bell"], ['📊', "Bar Chart"], ['📮', "Postbox"], ['🪜', "Ladder"],
-    ['🧰', "Toolbox"], ['🧼', "Soap"], ['🛍️", "Shopping Bags"], ['💎', "Gem Stone"],
-    ['🧪', "Test Tube"], ['💵', "Dollar Banknote"], ['🧳", "Luggage"], ['🔎', "Magnifying Glass"],
-    ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏", "Straight Ruler"], ['📐", "Set Square"],
-    ['🧩', "Puzzle Piece"], ['⏰', "Alarm Clock"], ['🗓️", "Spiral Calendar"], ['📅', "Calendar"],
+    ['🧰', "Toolbox"], ['🧼', "Soap"], ['🛍️', "Shopping Bags"], ['💎', "Gem Stone"],
+    ['🧪', "Test Tube"], ['💵', "Dollar Banknote"], ['🧳', "Luggage"], ['🔎', "Magnifying Glass"],
+    ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏', "Straight Ruler"], ['📐', "Set Square"],
+    ['🧩', "Puzzle Piece"], ['⏰', "Alarm Clock"], ['🗓️', "Spiral Calendar"], ['📅', "Calendar"],
     ['📰', "Newspaper"], ['🗞️', "Rolled-up Newspaper"], ['📜', "Scroll"], ['📖', "Open Book"],
     ['📕', "Red Book"], ['📗', "Green Book"], ['📘', "Blue Book"], ['📙', "Orange Book"],
-    ['🗒️', "Notepad"], ['📄', "Page Facing Up"], ['📃", "Page Curl"], ['🧾', "Receipt"],
+    ['🗒️', "Notepad"], ['📄', "Page Facing Up"], ['📃', "Page Curl"], ['🧾', "Receipt"],
     ['📈', "Chart Increasing"], ['📉', "Chart Decreasing"], ['🖋️', "Fountain Pen"], ['✒️', "Black Nib"],
     ['✏️', "Pencil"], ['🖌️', "Paintbrush"], ['🖍️', "Crayon"], ['🗂️', "Card Index Dividers"],
     ['📁', "File Folder"], ['📂', "Open File Folder"], ['🗃️', "Card File Box"], ['🗄️', "File Cabinet"],
@@ -64,7 +64,7 @@ function displayEmojiAndMessage(emojiChar, emojiName, isNewGeneration) {
     emojiDisplay.textContent = emojiChar;
     emojiNameDisplay.textContent = `You are ${emojiName}`;
 
-    // IMPORTANT: Always clear the message area - this should make sure no text appears.
+    // Clear the message area
     messageArea.textContent = ""; 
 }
 
