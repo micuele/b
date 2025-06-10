@@ -11,7 +11,7 @@ const objectEmojis = [
     ['🔔', "Bell"], ['📊', "Bar Chart"], ['📮', "Postbox"], ['🪜', "Ladder"],
     ['🧰', "Toolbox"], ['🧼', "Soap"], ['🛍️", "Shopping Bags"], ['💎', "Gem Stone"],
     ['🧪', "Test Tube"], ['💵', "Dollar Banknote"], ['🧳", "Luggage"], ['🔎', "Magnifying Glass"],
-    ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏', "Straight Ruler"], ['📐", "Set Square"],
+    ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏", "Straight Ruler"], ['📐", "Set Square"],
     ['🧩', "Puzzle Piece"], ['⏰', "Alarm Clock"], ['🗓️", "Spiral Calendar"], ['📅', "Calendar"],
     ['📰', "Newspaper"], ['🗞️', "Rolled-up Newspaper"], ['📜', "Scroll"], ['📖', "Open Book"],
     ['📕', "Red Book"], ['📗', "Green Book"], ['📘', "Blue Book"], ['📙', "Orange Book"],
@@ -64,7 +64,7 @@ function displayEmojiAndMessage(emojiChar, emojiName, isNewGeneration) {
     emojiDisplay.textContent = emojiChar;
     emojiNameDisplay.textContent = `You are ${emojiName}`;
 
-    // Always clear the message area - no text needed
+    // IMPORTANT: Always clear the message area - this should make sure no text appears.
     messageArea.textContent = ""; 
 }
 
