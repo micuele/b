@@ -10,109 +10,119 @@ layout: none
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Daily Object Emoji</title>
     <style>
-        /* General Body Styling */
+        /* General Body Styling - Inspired by micuele.de's dark theme */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #f4f7f6; /* A soft, light background */
-            color: #333;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f0f0f0; /* Light text for contrast */
             line-height: 1.6;
+            overflow: hidden; /* Prevent scrollbars if not needed */
         }
 
-        /* App Container Styling */
+        /* App Container Styling - Mimics a card element on micuele.de */
         .emoji-app-container {
-            background-color: #ffffff;
+            background-color: #282828; /* Slightly lighter dark for container */
             padding: 40px;
-            margin: 20px auto;
-            max-width: 480px; /* Max width for readability */
-            border-radius: 12px; /* Nicely rounded corners */
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin: 20px; /* Provides space on smaller screens */
+            max-width: 480px;
+            width: calc(100% - 40px); /* Responsive width */
+            border-radius: 8px; /* Subtle rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Deeper, diffused shadow */
             text-align: center;
-            border: 1px solid #e0e0e0; /* Light border */
+            border: 1px solid #3a3a3a; /* Subtle border for definition */
+            position: relative; /* For potential advanced effects */
+            overflow: hidden; /* Ensures inner elements are clipped */
         }
 
-        /* Title Styling */
+        /* Title Styling - Matches micuele.de's clean headings */
         .emoji-app-title {
             font-size: 2em;
-            color: #2c3e50; /* Darker title color */
+            color: #f0f0f0; /* Light title text */
             margin-bottom: 25px;
-            font-weight: 700; /* Bold */
+            font-weight: 600; /* Slightly bolder */
+            letter-spacing: 0.5px; /* Subtle letter spacing */
         }
 
-        /* Emoji Display Area */
+        /* Emoji Display Area - Large and prominent */
         #emoji-display {
             font-size: 9em; /* Extra large emoji */
             margin-bottom: 20px;
-            transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transitions for animations */
-            display: inline-block; /* Essential for transform animations */
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transitions */
+            display: inline-block; /* Allows transform animations */
+            color: #f0f0f0; /* Keeps emoji color light */
+            text-shadow: 0 0 10px rgba(109, 241, 211, 0.4); /* Subtle glow using accent color */
         }
 
-        /* Emoji Name Display Area */
+        /* Emoji Name Display Area - Clear and readable secondary text */
         #emoji-name-display {
             font-size: 1.3em;
-            color: #555;
+            color: #bbbbbb; /* Lighter grey for readability */
             margin-top: 10px;
             margin-bottom: 30px;
-            min-height: 1.5em; /* Helps prevent layout shifts when text appears */
-            font-weight: 500;
+            min-height: 1.5em; /* Prevents layout jump when text appears */
+            font-weight: 400;
+            letter-spacing: 0.2px;
         }
 
-        /* Button Styling */
+        /* Button Styling - Mimics micuele.de's button design */
         #generate-button {
-            background-color: #007bff; /* Vibrant blue */
-            color: white;
+            background-color: #6df1d3; /* Vibrant green accent color */
+            color: #1a1a1a; /* Dark text on light button */
             padding: 14px 30px;
             border: none;
-            border-radius: 50px; /* Pill-shaped button */
+            border-radius: 4px; /* Slightly squared corners */
             cursor: pointer;
             font-size: 1.1em;
             font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            outline: none; /* Remove outline on focus */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(109, 241, 211, 0.3); /* Shadow matching accent color */
+            outline: none; /* Removes default focus outline */
+            letter-spacing: 0.5px;
         }
 
         #generate-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            background-color: #4edfc0; /* Slightly darker green on hover */
+            transform: scale(1.02); /* Subtle grow effect */
+            box-shadow: 0 6px 15px rgba(109, 241, 211, 0.4); /* Enhanced shadow on hover */
         }
 
         #generate-button:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transform: translateY(0); /* Resets on click */
+            box-shadow: 0 2px 5px rgba(109, 241, 211, 0.2);
         }
 
         #generate-button:disabled {
-            background-color: #cccccc;
-            color: #666666;
+            background-color: #444444; /* Darker disabled background */
+            color: #888888; /* Greyed out text */
             cursor: not-allowed;
             box-shadow: none;
             transform: none;
         }
 
-        /* Message Area Styling */
+        /* Message Area Styling - Subtle and informative */
         #message-area {
             font-size: 0.95em;
-            color: #777;
+            color: #999999; /* Lighter grey */
             margin-top: 20px;
-            min-height: 1.2em; /* Prevent layout shift */
+            min-height: 1.2em; /* Prevents layout jump */
+            letter-spacing: 0.2px;
         }
 
-        /* Animation for the emoji */
+        /* Animation for the emoji - Adds a playful 'pop' */
         @keyframes popIn {
             0% { transform: scale(0.5); opacity: 0; }
-            80% { transform: scale(1.1); opacity: 1; }
+            80% { transform: scale(1.15); opacity: 1; } /* Over-scale slightly for bounce */
             100% { transform: scale(1); }
         }
 
         .animate {
-            animation: popIn 0.4s forwards;
+            animation: popIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Bouncy easing function */
         }
     </style>
 </head>
