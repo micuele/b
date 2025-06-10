@@ -1,4 +1,4 @@
-// assets/js/script.js
+// assets/js/emoji.js (This is the content for your emoji.js file)
 
 // List of emojis representing various objects, along with their names.
 const objectEmojis = [
@@ -9,13 +9,13 @@ const objectEmojis = [
     ['🛡️', "Shield"], ['🔭', "Telescope"], ['🧸', "Teddy Bear"], ['🎁', "Gift"],
     ['🖼️', "Framed Picture"], ['🛒', "Shopping Cart"], ['🔋', "Battery"], ['📍', "Round Pushpin"],
     ['🔔', "Bell"], ['📊', "Bar Chart"], ['📮', "Postbox"], ['🪜', "Ladder"],
-    ['🧰', "Toolbox"], ['🧼', "Soap"], ['🛍️', "Shopping Bags"], ['💎', "Gem Stone"],
-    ['🧪', "Test Tube"], ['💵', "Dollar Banknote"], ['🧳', "Luggage"], ['🔎', "Magnifying Glass"],
+    ['🧰', "Toolbox"], ['🧼', "Soap"], ['🛍️", "Shopping Bags"], ['💎', "Gem Stone"],
+    ['🧪', "Test Tube"], ['💵', "Dollar Banknote"], ['🧳", "Luggage"], ['🔎', "Magnifying Glass"],
     ['💰', "Money Bag"], ['✉️', "Envelope"], ['📏', "Straight Ruler"], ['📐', "Set Square"],
-    ['🧩', "Puzzle Piece"], ['⏰', "Alarm Clock"], ['🗓️', "Spiral Calendar"], ['📅', "Calendar"],
+    ['🧩', "Puzzle Piece"], ['⏰', "Alarm Clock"], ['🗓️", "Spiral Calendar"], ['📅', "Calendar"],
     ['📰', "Newspaper"], ['🗞️', "Rolled-up Newspaper"], ['📜', "Scroll"], ['📖', "Open Book"],
     ['📕', "Red Book"], ['📗', "Green Book"], ['📘', "Blue Book"], ['📙', "Orange Book"],
-    ['🗒️', "Notepad"], ['📄', "Page Facing Up"], ['📃', "Page Curl"], ['🧾', "Receipt"],
+    ['🗒️', "Notepad"], ['📄', "Page Facing Up"], ['📃", "Page Curl"], ['🧾', "Receipt"],
     ['📈', "Chart Increasing"], ['📉', "Chart Decreasing"], ['🖋️', "Fountain Pen"], ['✒️', "Black Nib"],
     ['✏️', "Pencil"], ['🖌️', "Paintbrush"], ['🖍️', "Crayon"], ['🗂️', "Card Index Dividers"],
     ['📁', "File Folder"], ['📂', "Open File Folder"], ['🗃️', "Card File Box"], ['🗄️', "File Cabinet"],
@@ -34,7 +34,7 @@ const objectEmojis = [
 // Get references to the HTML elements.
 const emojiDisplay = document.getElementById('emoji-display');
 const emojiNameDisplay = document.getElementById('emoji-name-display');
-const messageArea = document.getElementById('message-area'); // Still for the daily limit message
+const messageArea = document.getElementById('message-area');
 
 // Keys for storing data in localStorage.
 const LAST_GENERATED_DATE_KEY = 'dailyEmojiDate';
@@ -49,32 +49,31 @@ function getTodayDateString() {
 }
 
 /**
- * Handles the logic for displaying the emoji and message.
- * @param {string} emojiChar - The emoji character to display.
- * @param {string} emojiName - The name of the emoji.
- * @param {boolean} isNewGeneration - True if this is a newly generated emoji for today.
+ * Displays the emoji and its associated messages in the UI.
+ * @param {string} emojiChar - The emoji character (e.g., '💡').
+ * @param {string} emojiName - The descriptive name of the emoji (e.g., "Light Bulb").
+ * @param {boolean} isNewGeneration - True if this emoji was just randomly generated for today.
  */
 function displayEmojiAndMessage(emojiChar, emojiName, isNewGeneration) {
+    // Crucial check: Ensure elements are found before trying to set their textContent
     if (!emojiDisplay || !emojiNameDisplay || !messageArea) {
-        console.error("Missing one or more required HTML elements for daily emoji app.");
-        return;
+        console.error("JavaScript Error: One or more required HTML elements (emoji-display, emoji-name-display, or message-area) were not found in the DOM when displayEmojiAndMessage was called.");
+        // This log will help if the elements are not ready, or IDs don't match
+        console.log("Debug: emojiDisplay =", emojiDisplay, "emojiNameDisplay =", emojiNameDisplay, "messageArea =", messageArea);
+        return; // Stop execution if elements are missing
     }
 
     emojiDisplay.textContent = emojiChar;
-    emojiNameDisplay.textContent = `You are ${emojiName}`; // Directly set "You are X emoji"
+    emojiNameDisplay.textContent = `You are ${emojiName}`;
 
     if (isNewGeneration) {
-        messageArea.textContent = "Enjoy your daily object emoji!"; // Message for a new emoji
-        // Optional: Add animation class only for new generations
-        // emojiDisplay.classList.remove('animate');
-        // void emojiDisplay.offsetWidth;
-        // emojiDisplay.classList.add('animate');
+        messageArea.textContent = "Enjoy your daily object emoji!";
     } else {
-        messageArea.textContent = "Come back tomorrow for a new one!"; // Message if already generated today
+        messageArea.textContent = "Come back tomorrow for a new one!";
     }
 }
 
-// Initialize the app when the DOM is fully loaded.
+// This function runs automatically once the entire HTML document is loaded.
 document.addEventListener('DOMContentLoaded', () => {
     const todayDate = getTodayDateString();
     const lastGeneratedDate = localStorage.getItem(LAST_GENERATED_DATE_KEY);
@@ -83,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let storedEmoji = null;
     let storedEmojiName = null;
 
-    // Attempt to parse stored emoji data if it exists.
     if (storedEmojiDataString) {
         try {
             const data = JSON.parse(storedEmojiDataString);
@@ -91,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 storedEmoji = data.char;
                 storedEmojiName = data.name;
             } else {
-                console.warn("Stored emoji data is malformed. Will generate new.");
+                console.warn("Stored emoji data is malformed or incomplete. Generating a new emoji.");
                 localStorage.removeItem(GENERATED_EMOJI_DATA_KEY);
                 localStorage.removeItem(LAST_GENERATED_DATE_KEY);
             }
@@ -102,18 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Logic to determine whether to display stored or generate new
     if (lastGeneratedDate === todayDate && storedEmoji && storedEmojiName) {
-        // If an emoji was already generated for today, display it.
         displayEmojiAndMessage(storedEmoji, storedEmojiName, false);
     } else {
-        // If no emoji generated today, or data is missing/corrupted, generate a new one.
         const randomIndex = Math.floor(Math.random() * objectEmojis.length);
         const [newEmojiChar, newEmojiName] = objectEmojis[randomIndex];
 
-        // Store the newly generated emoji data and today's date.
         localStorage.setItem(GENERATED_EMOJI_DATA_KEY, JSON.stringify({ char: newEmojiChar, name: newEmojiName }));
-        localStorage.setItem(LAST_GENERATED_DATE_KEY, getTodayDateString());
+        localStorage.setItem(LAST_GENERATED_DATE_KEY, todayDate);
 
         displayEmojiAndMessage(newEmojiChar, newEmojiName, true);
     }
