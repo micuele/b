@@ -5,6 +5,5 @@ layout: page
 <div class="emoji-app-container">
     <h1 id="emoji-display"></h1> 
     <p id="emoji-name-display" class="emoji-app-name"></p>
-    <p id="message-area" class="emoji-app-message"></p>
 </div>
 <script src="{{ '/assets/js/emoji.js' | relative_url }}" defer></script>
