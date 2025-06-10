@@ -34,7 +34,7 @@ const objectEmojis = [
 // Get references to the HTML elements.
 const emojiDisplay = document.getElementById('emoji-display');
 const emojiNameDisplay = document.getElementById('emoji-name-display');
-const messageArea = document.getElementById('message-area'); // Still here, but won't display 'come back tomorrow'
+const messageArea = document.getElementById('message-area'); 
 
 // Keys for storing data in localStorage.
 const LAST_GENERATED_DATE_KEY = 'dailyEmojiDate';
@@ -64,14 +64,8 @@ function displayEmojiAndMessage(emojiChar, emojiName, isNewGeneration) {
     emojiDisplay.textContent = emojiChar;
     emojiNameDisplay.textContent = `You are ${emojiName}`;
 
-    // Removed the "Come back tomorrow for a new one!" message.
-    // The message area will now only display "Enjoy your daily object emoji!" on a new generation.
-    // Otherwise, it will remain empty if the emoji was already generated for the day.
-    if (isNewGeneration) {
-        messageArea.textContent = "Enjoy your daily object emoji!";
-    } else {
-        messageArea.textContent = ""; // Clear message if it's not a new generation
-    }
+    // Always clear the message area - no text needed
+    messageArea.textContent = ""; 
 }
 
 // This function runs automatically once the entire HTML document is loaded.
