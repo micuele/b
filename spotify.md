@@ -7,4 +7,4 @@ layout: page
     <div id="emoji-display"></div> <p id="emoji-name-display" class="emoji-app-name"></p>
     <p id="message-area" class="emoji-app-message"></p>
 </div>
-<script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/emoji.js' | relative_url }}" defer></script>
