@@ -7,40 +7,82 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: micuele
+# SEO-optimized site info
+title: "Michele Qirici - Personal Blog"
 email: qiricimichele@gmail.com
-author: Michele Qirici
+author: 
+  name: "Michele Qirici"
+  email: qiricimichele@gmail.com
+  bio: "Personal thoughts and insights by Michele Qirici"
+  location: "Germany"
+  
+# SEO description (keep under 160 characters)
 description: >- # this means to ignore newlines until "baseurl:"
-  hi.
+  Personal blog of Michele Qirici sharing thoughts, insights, and experiences.
+
+# Site URLs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://micuele.de" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  micuele
 
+# Social profiles (helps with SEO)
+github_username: micuele
+social:
+  name: "Michele Qirici"
+  links:
+    - "https://github.com/micuele"
+    - "https://micuele.de"
+
+# Site branding
 favicon: "heart.png"
 
-# Build settings
-#theme: no-style-please
-remote_theme: riggraz/no-style-please
+# SEO settings
+lang: en
+timezone: Europe/Berlin
 
+# Jekyll SEO Tag settings
+twitter:
+  card: summary
+
+# Build settings
+remote_theme: riggraz/no-style-please
 theme_config:
   appearance: "light"
   back_home_text: "back"
   date_format: "%Y-%m-%d"
 
+# Essential SEO plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Pagination (if you want it later)
+# paginate: 10
+# paginate_path: "/page:num/"
+
+# Permalink structure (SEO-friendly URLs)
+permalink: /:year/:month/:title/
+
+# Default values for posts (helps with SEO consistency)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Michele Qirici"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
