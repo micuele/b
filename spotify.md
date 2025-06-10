@@ -1,7 +1,7 @@
 ---
 title: Your Emoji
 permalink: /spotify/
-layout: post
+layout: page
 ---
 <div class="emoji-app-container">
     <div id="emoji-display">❓</div>
