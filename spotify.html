@@ -10,119 +10,76 @@ layout: none
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Daily Object Emoji</title>
     <style>
-        /* General Body Styling - Inspired by micuele.de's dark theme */
+        /* Minimal Body Styling */
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            display: flex;
+            font-family: sans-serif; /* Plain, simple font */
+            display: flex; /* Flexbox for easy centering */
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #1a1a1a; /* Dark background */
-            color: #f0f0f0; /* Light text for contrast */
-            line-height: 1.6;
-            overflow: hidden; /* Prevent scrollbars if not needed */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            min-height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            background-color: #ffffff; /* Pure white background */
+            color: #333; /* Standard dark grey text */
         }
 
-        /* App Container Styling - Mimics a card element on micuele.de */
+        /* App Container Styling - Centered and plain */
         .emoji-app-container {
-            background-color: #282828; /* Slightly lighter dark for container */
-            padding: 40px;
-            margin: 20px; /* Provides space on smaller screens */
-            max-width: 480px;
-            width: calc(100% - 40px); /* Responsive width */
-            border-radius: 8px; /* Subtle rounded corners */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Deeper, diffused shadow */
-            text-align: center;
-            border: 1px solid #3a3a3a; /* Subtle border for definition */
-            position: relative; /* For potential advanced effects */
-            overflow: hidden; /* Ensures inner elements are clipped */
+            padding: 40px; /* Ample padding */
+            text-align: center; /* Center text content */
+            max-width: 400px; /* Keep it compact */
+            width: 100%; /* Responsive width */
+            box-sizing: border-box; /* Include padding in width */
         }
 
-        /* Title Styling - Matches micuele.de's clean headings */
+        /* Title Styling */
         .emoji-app-title {
             font-size: 2em;
-            color: #f0f0f0; /* Light title text */
             margin-bottom: 25px;
-            font-weight: 600; /* Slightly bolder */
-            letter-spacing: 0.5px; /* Subtle letter spacing */
         }
 
-        /* Emoji Display Area - Large and prominent */
+        /* Emoji Display Area */
         #emoji-display {
-            font-size: 9em; /* Extra large emoji */
+            font-size: 8em; /* Large emoji */
             margin-bottom: 20px;
-            transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transitions */
-            display: inline-block; /* Allows transform animations */
-            color: #f0f0f0; /* Keeps emoji color light */
-            text-shadow: 0 0 10px rgba(109, 241, 211, 0.4); /* Subtle glow using accent color */
+            display: inline-block; /* For potential future animations */
         }
 
-        /* Emoji Name Display Area - Clear and readable secondary text */
+        /* Emoji Name Display Area */
         #emoji-name-display {
-            font-size: 1.3em;
-            color: #bbbbbb; /* Lighter grey for readability */
+            font-size: 1.2em;
             margin-top: 10px;
             margin-bottom: 30px;
-            min-height: 1.5em; /* Prevents layout jump when text appears */
-            font-weight: 400;
-            letter-spacing: 0.2px;
+            min-height: 1.5em; /* Prevents layout jump */
         }
 
-        /* Button Styling - Mimics micuele.de's button design */
+        /* Button Styling */
         #generate-button {
-            background-color: #6df1d3; /* Vibrant green accent color */
-            color: #1a1a1a; /* Dark text on light button */
-            padding: 14px 30px;
+            background-color: #007bff; /* Simple blue */
+            color: white;
+            padding: 12px 25px;
             border: none;
-            border-radius: 4px; /* Slightly squared corners */
+            border-radius: 5px; /* Slightly rounded */
             cursor: pointer;
             font-size: 1.1em;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(109, 241, 211, 0.3); /* Shadow matching accent color */
-            outline: none; /* Removes default focus outline */
-            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease; /* Smooth hover */
         }
 
         #generate-button:hover {
-            background-color: #4edfc0; /* Slightly darker green on hover */
-            transform: scale(1.02); /* Subtle grow effect */
-            box-shadow: 0 6px 15px rgba(109, 241, 211, 0.4); /* Enhanced shadow on hover */
-        }
-
-        #generate-button:active {
-            transform: translateY(0); /* Resets on click */
-            box-shadow: 0 2px 5px rgba(109, 241, 211, 0.2);
+            background-color: #0056b3; /* Darker blue on hover */
         }
 
         #generate-button:disabled {
-            background-color: #444444; /* Darker disabled background */
-            color: #888888; /* Greyed out text */
+            background-color: #cccccc; /* Grey when disabled */
             cursor: not-allowed;
-            box-shadow: none;
-            transform: none;
         }
 
-        /* Message Area Styling - Subtle and informative */
+        /* Message Area Styling */
         #message-area {
-            font-size: 0.95em;
-            color: #999999; /* Lighter grey */
+            font-size: 0.9em;
+            color: #666;
             margin-top: 20px;
             min-height: 1.2em; /* Prevents layout jump */
-            letter-spacing: 0.2px;
-        }
-
-        /* Animation for the emoji - Adds a playful 'pop' */
-        @keyframes popIn {
-            0% { transform: scale(0.5); opacity: 0; }
-            80% { transform: scale(1.15); opacity: 1; } /* Over-scale slightly for bounce */
-            100% { transform: scale(1); }
-        }
-
-        .animate {
-            animation: popIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Bouncy easing function */
         }
     </style>
 </head>
