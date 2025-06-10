@@ -7,13 +7,53 @@ layout: none
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Your Spotify Emoji</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Object Emoji</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #emoji-display {
+            font-size: 8em; /* Make the emoji big! */
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #007bff; /* A nice blue */
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
-  <div id="app">
-    <p>Loading your emoji...</p>
-  </div>
-  <script src="/assets/js/spotify-emoji.js"></script>
+    <div class="container">
+        <h1>Your Random Object:</h1>
+        <div id="emoji-display">❓</div> <button id="generate-button">Generate Emoji</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
