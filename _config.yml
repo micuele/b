@@ -20,6 +20,7 @@
 
 title: micuele
 email: qiricimichele@gmail.com
+author: Michele Qirici
 description: >- # this means to ignore newlines until "baseurl:"
   hi.
 baseurl: "" # the subpath of your site, e.g. /blog
