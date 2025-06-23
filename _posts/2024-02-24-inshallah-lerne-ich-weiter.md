@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lernen"
+permalink: /lernen/
 category: text
 ---
 ### Zeilsetzen  
