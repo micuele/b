@@ -5,7 +5,7 @@ entries:
   - title: projects
     entries:
       - title: ever wonderd what emoji best represents you?
-        url: spotify
+        url: emoji
   - title: all posts
     post_list:
       category: geschichte
