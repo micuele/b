@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Der meta-dimensionale Mensch"
+permalink: /Der-meta-dimensionale-Mensch/
 category: geschichte
 ---
 Der meta-dimensionale Mensch findet Spiritualität in der Semantik von Worten im Kontext gesellschaftlicher Erwartungen und ist nicht authentisch.
