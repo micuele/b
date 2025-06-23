@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Willst du wirklich deine Haare?"
+permalink: /Willst-du-wirklich-deine-Haare/
+
 category: geschichte
 ---
 Auf dem Waschbecken liegt mein Haarschneider. Ich betrachte ihn.
