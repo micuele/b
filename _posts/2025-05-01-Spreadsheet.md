@@ -6,8 +6,8 @@ category: text
 ---
 
 
-Ich bin noch Geringverdiener, trotzdem dachte ich, ich brauche eine Übersicht, um mein Einkommen und meine Ausgaben zu verfolgen.
-Ich mache das jetzt seit 3 Jahren, das hier ist meine aktuellste Version und die beste bisher.
+Ich bin zwar noch Geringverdiener, dachte aber, ich bräuchte eine Übersicht, um mein Einkommen und meine Ausgaben zu verfolgen.
+Ich mache das jetzt seit drei Jahren, und das hier ist meine aktuellste und beste Version.
 
 Das hier ist die Übersichtsseite, auf der ich den Monat auswählen und sehen kann, was für mich am wichtigsten ist.
 
@@ -46,9 +46,9 @@ So sieht eine dieser Zellen aus:
 ## Persönlich heißt persönlich
 Personal Finance ist per Definition persönlich. Deshalb sollte man sich zuerst fragen: Was brauche ich wirklich, und wie viel Zeit will ich meinem Spreadsheet widmen?
 
-Wenn man von Personal Finance-Spreadsheets spricht, kann man keine Fehler machen. Egal welches Layout man wählt, man wird auf jeden Fall die Fähigkeit erlernen, Excel zu benutzen.
+Wenn es um Personal-Finance-Spreadsheets geht, gibt es kein 'Richtig' oder 'Falsch'. Egal welches Layout man wählt, man wird auf jeden Fall die Fähigkeit erlernen, Excel zu benutzen.
 
-In 2023 und 2024 hatte ich eine viel kompliziertere Tabelle.
+2023 und 2024 hatte ich eine viel kompliziertere Tabelle.
 Ich habe jede Transaktion manuell eingetragen und nach Konto und Kategorie sortiert.
 
 Das war echt zeitaufwendig. Ich habe zwei Jahre lang akribisch mein Einkommen und meine Ausgaben verfolgt.
