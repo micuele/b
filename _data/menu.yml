@@ -14,6 +14,11 @@ entries:
       show_more_text: See archive...
       show_more_url: archive
   - title: blog
-    url: blog
+    post_list:
+      category: geschichte
+      limit: 0
+      show_more: true
+      show_more_text: See blog...
+      show_more_url: blog
   - title: about
     url: about
