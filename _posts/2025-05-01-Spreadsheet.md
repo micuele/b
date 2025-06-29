@@ -19,7 +19,7 @@ Ich importiere die Daten von meiner Bank, lasse sie in einer Liste darstellen un
 
 
 So sieht eine dieser Zellen aus:
-'''
+```
 =WENN(ODER(
   ISTZAHL(SUCHEN("aldi"; O3));
   ISTZAHL(SUCHEN("lidl"; O3));
@@ -42,7 +42,7 @@ So sieht eine dieser Zellen aus:
   ISTZAHL(SUCHEN("markt"; O3));
   ISTZAHL(SUCHEN("späti"; O3))
 ); P3; "")
-'''
+```
 ## Persönlich heißt persönlich
 Personal Finance ist per Definition persönlich. Deshalb sollte man sich zuerst fragen: Was brauche ich wirklich, und wie viel Zeit will ich meinem Spreadsheet widmen?
 
