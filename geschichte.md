@@ -1,5 +1,5 @@
 ---
 layout: blog
-title: Blog
+title: Geschichten
 which_category: geschichte
 ---
