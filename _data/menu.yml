@@ -2,16 +2,18 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: Projects
+  - title: Projekte
     entries:
       - title: ever wonderd what emoji best represents you?
         url: emoji
-  - title: all posts
+  - title: Alle Beiträge
     post_list:
       category: text
       limit: 5
       show_more: true
-      show_more_text: Stories
-      show_more_url: story
+      show_more_text: Archiv ansehen...
+      show_more_url: archive
+  - title: Geschichten
+    url: geschichte
   - title: About
     url: about
