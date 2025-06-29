@@ -17,6 +17,33 @@ Ich importiere die Daten von meiner Bank, lasse sie in einer Liste darstellen un
 
 ![Spreadsheet Data](/img/spreadsheet/2.png)
 
+
+So sieht eine dieser Zellen aus:
+'''
+=WENN(ODER(
+  ISTZAHL(SUCHEN("aldi"; O3));
+  ISTZAHL(SUCHEN("lidl"; O3));
+  ISTZAHL(SUCHEN("rewe"; O3));
+  ISTZAHL(SUCHEN("penny"; O3));
+  ISTZAHL(SUCHEN("kaufland"; O3));
+  ISTZAHL(SUCHEN("edeka"; O3));
+  ISTZAHL(SUCHEN("netto"; O3));
+  ISTZAHL(SUCHEN("hit"; O3));
+  ISTZAHL(SUCHEN("real"; O3));
+  ISTZAHL(SUCHEN("tegut"; O3));
+  ISTZAHL(SUCHEN("denn's"; O3));
+  ISTZAHL(SUCHEN("bio company"; O3));
+  ISTZAHL(SUCHEN("rossmann"; O3));
+  ISTZAHL(SUCHEN("dm"; O3));
+  ISTZAHL(SUCHEN("müller"; O3));
+  ISTZAHL(SUCHEN("getränke hoffmann"; O3));
+  ISTZAHL(SUCHEN("famila"; O3));
+  ISTZAHL(SUCHEN("e center"; O3));
+  ISTZAHL(SUCHEN("markt"; O3));
+  ISTZAHL(SUCHEN("späti"; O3))
+); P3; "")
+'''
+## Persönlich heißt persönlich
 Personal Finance ist per Definition persönlich. Deshalb sollte man sich zuerst fragen: Was brauche ich wirklich, und wie viel Zeit will ich meinem Spreadsheet widmen?
 
 Wenn man von Personal Finance-Spreadsheets spricht, kann man keine Fehler machen. Egal welches Layout man wählt, man wird auf jeden Fall die Fähigkeit erlernen, Excel zu benutzen.
