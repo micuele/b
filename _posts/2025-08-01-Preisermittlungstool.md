@@ -8,5 +8,7 @@ Mein Tool ermöglicht es Mitarbeitern, durch die einfache Eingabe von Raummaßen
 Dieses Beispiel zeigt, wie eine einfache technische Lösung dazu beitragen kann, Geschäftsprozesse zu vereinfachen und das Wachstum zu unterstützen.
 
 Die angezeigten Zahlen dienen hier nur als Beispiel.
+
 ![Preisermittlungstool Dashboard](/img/1a.png)
+
 ![Preisermittlungstool Data](/img/2a.png)
